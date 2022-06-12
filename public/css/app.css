@@ -1,0 +1,54 @@
+.canvas__brush {
+  display: flex;
+  align-items: center;
+}
+.canvas__brush input {
+  height: 100%;
+  background-color: transparent;
+  border: solid 1px #718096;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.canvas__brush-thickness {
+  width: 50px;
+}
+.canvas__brush-color, .canvas__brush-eraser {
+  display: none;
+}
+.canvas__brush-btn {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.canvas__brush-eraser:checked + .canvas__brush-btn path {
+  fill: #1564f5;
+}
+.canvas__brush-eraser:not(:checked) + .canvas__brush-btn path {
+  fill: black;
+}
+.canvas__brush img, .canvas__brush svg {
+  width: 24px;
+  height: 24px;
+}
+.canvas #canvas {
+  width: 300px;
+  height: 300px;
+  border: solid 1px #718096;
+  border-radius: 5px;
+}
+
+.gallery__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px -10px 0 -10px;
+}
+.gallery__image {
+  border: solid 1px #718096;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 10px 0 10px;
+}
+.gallery__image img {
+  width: 150px;
+  height: 150px;
+}
+
